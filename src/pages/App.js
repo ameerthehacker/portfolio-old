@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import Avatar from '../components/Intro/Intro';
-import './App.scss';
+import Avatar from '../components/Intro/intro';
+import './app.scss';
 
 function App() {
   return (

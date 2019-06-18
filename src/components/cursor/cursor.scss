@@ -1,0 +1,17 @@
+.cursor {
+  width: 10px;
+  height: 20px;
+  display: inline-block;
+  background: #000;
+  animation: cursor 1s linear infinite;
+}
+
+.hash {
+  font-weight: bold;
+}
+
+@keyframes cursor{
+  0% { opacity: 0; }
+  50%{ opacity: .5; }
+  100%{ opacity: 1; }
+}
