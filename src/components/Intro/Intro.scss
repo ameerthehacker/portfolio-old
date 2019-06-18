@@ -1,0 +1,22 @@
+img.avatar {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  color: #34495e;
+  font-weight: 250 !important;
+}
+
+.sub-description {
+  font-weight: 300 !important; 
+}
+
+.avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2% 0;
+  align-items: center;
+}
