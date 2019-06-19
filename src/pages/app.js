@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Intro from '../components/Intro/intro';
+import Intro from '../components/intro/intro';
 import './app.scss';
 
 function App() {
