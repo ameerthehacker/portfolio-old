@@ -6,6 +6,7 @@ import Fab from '@material-ui/core/Fab';
 import { makeStyles } from '@material-ui/core/styles';
 import Cursor from '../cursor/cursor';
 import { useSpring, animated, config, useTransition } from 'react-spring';
+import MyImage from '../../images/me.jpg';
 
 const useStyles = makeStyles(theme => ({
   myWorksFab: {
@@ -31,19 +32,20 @@ function Intro(props) {
 
   const descriptionsComponents = [
     <h2 className="description">
-      Howdy, I'm Ameer Jhan <Cursor />
+      Howdy <i style={{color: 'hotpink'}} className="fa fa-hand-peace-o	"></i>, I'm Ameer Jhan <Cursor />
     </h2>,
     <p className="sub-description">
-      A passionate full-stack developer and an open source lover
+      A passionate full-stack developer who has fell in <i style={{color: 'hotpink'}} className="fa fa-heart"></i> with learning and open source
     </p>,
     <Social className={classes.topSpacing} />,
     <Fab
+      onClick={() => { props.history.push('/works') }}
       className={classes.myWorksFab}
       variant="extended"
       size="medium"
       aria-label="Add"
     >
-      <span className="white-color"><i className="fa fa-arrow-down white-color"></i> &nbsp; My Works</span>
+      <span style={{color: "white"}}><i style={{color: "white"}} className="fa fa-laptop"></i> My Works</span>
     </Fab>        
   ];
 
@@ -54,17 +56,30 @@ function Intro(props) {
     },
     from: {
       opacity: 0,
-      marginTop: "30px",
+      marginTop: "40px",
     },
     config: { ...config.slow, duration: 700 },
   });
 
   return (
-    <Fragment>
-      <Grid className="avatar-container">
-        <Grid item md={3}>
+    <Grid 
+        container
+        direction="row"
+        justify="center"
+        alignItems="center" 
+        style={{height: "100vh"}}>
+        <Grid item md={3} sm={6} xs={12}>
           <animated.div style={moveInAnimation}>
-            <img className="avatar" src={props.src} />
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+            >
+              <Grid item md={8} sm={7} xs={6}>
+                <img className="avatar" src={MyImage} />
+              </Grid>
+            </Grid>
           </animated.div>
           <div className="text-center">
              {
@@ -77,7 +92,6 @@ function Intro(props) {
           </div>
         </Grid>
       </Grid>
-    </Fragment>
   );
 }
 
