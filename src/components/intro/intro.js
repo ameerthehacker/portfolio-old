@@ -35,7 +35,7 @@ function Intro(props) {
       Howdy <i style={{color: 'hotpink'}} className="fa fa-hand-peace-o	"></i>, I'm Ameer Jhan <Cursor />
     </h2>,
     <p className="sub-description">
-      A passionate full-stack developer who has fell in <i style={{color: 'hotpink'}} className="fa fa-heart"></i> with learning and open source
+      A passionate and enthusiastic programmer who has fell in <i style={{color: 'hotpink'}} className="fa fa-heart"></i> with learning and open source
     </p>,
     <Social className={classes.topSpacing} />,
     <Fab
