@@ -70,7 +70,6 @@ const PROJECTS = [
       {
         projectHeading: "MyChoices Mobile App",
         projectDescription: "A Xamarin based mobile app used by 100 users with offline support",
-        githubLink: "https://www.github.com/ameerthehacker/SlamBook",
       }
     ]
   },

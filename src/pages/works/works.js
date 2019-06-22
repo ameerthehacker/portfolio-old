@@ -4,6 +4,7 @@ import ProjectCard from '../../components/project-card/project-card';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import PROJECTS from "../../projects";
+import { useSpring, animated } from 'react-spring';
 
 const useStyles = makeStyles(theme => ({
   worksContainer: {
@@ -17,28 +18,41 @@ const BG_COLORS = [
   ["56Ab2F", "A8E063"]
 ]
 
-function Works() {
+function Works({ history }) {
   const classes = useStyles();
   let colorIndex = 0;
+  const scaleAnimation = useSpring({
+    transform: "scale(1)",
+    from: {
+      transform: "scale(0)"
+    }
+  })
 
   return (
-    <Grid container spacing={2} className={classes.worksContainer}>
-      {PROJECTS.map((PROJECT) => 
-        {
-          return PROJECT.projects.map((project) => 
-          <Fragment>
-            <Grid item md={4} xs={12}> 
-              <h1 className="text-center" style={{fontWeight: "300"}}>
-                {PROJECT.icon? 
-                  <i style={{color: `#${PROJECT.iconColor}`}} class={PROJECT.icon}></i>: ""
-                } {PROJECT.title}
-              </h1>
-              <ProjectCard {...project} bgColors={BG_COLORS[(colorIndex++) % BG_COLORS.length]}/>
-            </Grid>
-          </Fragment>
-        )}
-      )}
-    </Grid>
+    <Fragment>
+      <Grid container spacing={2} className={classes.worksContainer}>
+        <Grid item xs={12}>
+          <h1 onClick={() => history.push("/")} style={{fontWeight: "200", cursor: "pointer"}}><i style={{color: "hotpink"}} class="far fa-hand-point-left"></i> Back</h1> 
+        </Grid>
+          {PROJECTS.map((PROJECT) => 
+            {
+              return PROJECT.projects.map((project) => 
+              <Fragment>
+                <Grid item md={4} xs={12}> 
+                  <animated.div style={scaleAnimation}>
+                    <h1 className="text-center" style={{fontWeight: "300"}}>
+                      {PROJECT.icon? 
+                        <i style={{color: `#${PROJECT.iconColor}`}} class={PROJECT.icon}></i>: ""
+                      } {PROJECT.title}
+                    </h1>
+                    <ProjectCard {...project} bgColors={BG_COLORS[(colorIndex++) % BG_COLORS.length]}/>
+                  </animated.div>
+                </Grid>
+              </Fragment>
+            )}
+          )}
+      </Grid>
+    </Fragment>
   );
 }
 
