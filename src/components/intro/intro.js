@@ -43,9 +43,8 @@ function Intro(props) {
       className={classes.myWorksFab}
       variant="extended"
       size="medium"
-      aria-label="Add"
     >
-      <span style={{color: "white"}}><i style={{color: "white"}} className="fa fa-laptop"></i> My Works</span>
+      <span style={{color: "white"}}><i style={{color: "white"}} className="fas fa-laptop-code"></i> My Works</span>
     </Fab>        
   ];
 

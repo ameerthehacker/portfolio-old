@@ -1,12 +1,13 @@
 
 @import "~roboto-fontface/css/roboto/roboto-fontface.css";
-@import "~font-awesome/css/font-awesome.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
 body {
   font-family: roboto, sans-serif;
   background: url('./images/bg.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
+  height: 100%;
 }
 
 .text-center {
