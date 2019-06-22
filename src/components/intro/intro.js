@@ -32,7 +32,7 @@ function Intro(props) {
 
   const descriptionsComponents = [
     <h2 className="description">
-      Howdy <i style={{color: 'hotpink'}} className="fa fa-hand-peace-o	"></i>, I'm Ameer Jhan <Cursor />
+      Howdy <i style={{color: 'hotpink'}} className="far fa-hand-peace	"></i>, I'm Ameer Jhan <Cursor />
     </h2>,
     <p className="sub-description">
       A passionate and enthusiastic programmer who has fell in <i style={{color: 'hotpink'}} className="fa fa-heart"></i> with learning and open source
