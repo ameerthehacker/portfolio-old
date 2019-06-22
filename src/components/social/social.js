@@ -4,7 +4,7 @@ import './social.scss';
 function Social(props) {
   return (
     <div className="text-center">
-      <a target="_blank" href="https://www.npmjs.com/settings/ameerthehacker/packages">
+      <a target="_blank" href="https://www.npmjs.com/~ameerthehacker">
         <i style={{color: "#FB3E44"}} className="fab fa-2x fa-npm"></i>
       </a>
       <a target="_blank" href="https://github.com/ameerthehacker">
