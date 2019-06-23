@@ -1,16 +1,17 @@
 import React, {useState} from 'react';
 import Md from 'react-markdown/with-html';
 
-function ProjectMd({ fileName }) {
+function ProjectMd({ fileName: projectName }) {
   const mdSource = process.env.REACT_APP_MD_SOURCE;
   const [md, setMd] = useState(null);
+  const transformImageUri = (uri) => `${mdSource}/${projectName}/images/${uri}`;
 
-  fetch(`${mdSource}/${fileName}.md`).then(async (response) => {
+  fetch(`${mdSource}/${projectName}/index.md`).then(async (response) => {
     setMd(await response.text());
   });
 
   return (
-    <Md source={md} />
+    <Md transformImageUri={transformImageUri} source={md} />
   );
 }
 
