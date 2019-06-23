@@ -63,6 +63,7 @@ const PROJECTS = [
       {
         projectHeading: "MyChoices Ecosystem",
         projectDescription: "A highly scalable ecosystem built with Kubernetes",
+        md: "mychoices-ecosystem"
       }
     ]
   },
