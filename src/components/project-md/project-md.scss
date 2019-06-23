@@ -2,7 +2,7 @@
   img:not(.html-image) {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 
                 0px 4px 8px 0px rgba(0, 0, 0, 0.14), 
                 0px 1px 16px 0px rgba(0, 0, 0, 0.12)                          
@@ -11,6 +11,12 @@
   @media (min-width:1200px)  
   {
     padding: 0 300px;
+  }
+  
+  img {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 
+    0px 4px 8px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 16px 0px rgba(0, 0, 0, 0.12) 
   }
   
   h2 {

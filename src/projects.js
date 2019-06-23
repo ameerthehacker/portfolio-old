@@ -10,7 +10,8 @@ const PROJECTS = [
         githubLink: "https://www.github.com/ameerthehacker/react-lazyload",
         downloads: "5M",
         downloadsLink: "https://npm-stat.com/charts.html?package=react-lazyload&from=2000-01-01&to=2019-06-30",
-        npmLink: "https://www.npmjs.com/package/react-lazyload"
+        npmLink: "https://www.npmjs.com/package/react-lazyload",
+        md: "react-lazyload"
       }
     ]
   },
@@ -85,6 +86,7 @@ const PROJECTS = [
         projectHeading: "I{Code}",
         projectDescription: "An open source compiler engine",
         githubLink: "https://www.github.com/ameerthehacker/express-icode",
+        md: "icode"
       }
     ]
   },
@@ -97,6 +99,7 @@ const PROJECTS = [
         projectHeading: "Slam Book",
         projectDescription: "A full fledged online slambook used by 300 users",
         githubLink: "https://www.github.com/ameerthehacker/SlamBook",
+        md: "slambook"
       }
     ]
   }
