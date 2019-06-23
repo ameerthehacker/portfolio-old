@@ -75,6 +75,7 @@ const PROJECTS = [
       {
         projectHeading: "MyChoices Mobile App",
         projectDescription: "A Xamarin based mobile app used by 100 users with offline support",
+        "md": "mychoices-mobile-app"
       }
     ]
   },
