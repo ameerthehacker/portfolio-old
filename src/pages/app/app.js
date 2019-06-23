@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Intro from '../../components/intro/intro';
 import Works from '../works/works';
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 function App() {
   return (

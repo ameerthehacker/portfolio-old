@@ -1,0 +1,17 @@
+.title-size {
+  font-weight: 200 !important;
+  font-size: 2em;
+
+  @media(max-width:562px) 
+  {
+    font-size: 1em;
+  }
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}

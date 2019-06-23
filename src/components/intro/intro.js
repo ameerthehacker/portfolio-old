@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './intro.scss';
 import Grid from '@material-ui/core/Grid';
 import Social from '../social/social';
@@ -76,7 +76,7 @@ function Intro(props) {
               alignItems="center"
             >
               <Grid item md={8} sm={7} xs={6}>
-                <img className="avatar" src={MyImage} />
+                <img alt="Ameer Jhan" className="avatar" src={MyImage} />
               </Grid>
             </Grid>
           </animated.div>
