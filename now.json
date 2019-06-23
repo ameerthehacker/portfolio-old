@@ -8,6 +8,11 @@
       "config": { "distDir": "build" }
     }
   ],
+  "build": {
+    "env": {
+      "REACT_APP_MD_SOURCE": "https://raw.githubusercontent.com/ameerthehacker/portfolio-core/master/projects"
+    }
+  },
   "routes": [
     {
       "src": "/static/(.*)",
