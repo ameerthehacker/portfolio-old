@@ -10,7 +10,7 @@
   ],
   "build": {
     "env": {
-      "REACT_APP_MD_SOURCE": "https://raw.githubusercontent.com/ameerthehacker/portfolio-core/master/projects"
+      "REACT_APP_MD_SOURCE": "https://raw.githubusercontent.com/ameerthehacker/portfolio-core/master"
     }
   },
   "routes": [

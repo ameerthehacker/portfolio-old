@@ -4,18 +4,18 @@ import Grid from '@material-ui/core/Grid';
 import './project-md.scss';
 
 function ProjectMd({ fileName: projectName }) {
-  const mdSource = process.env.REACT_APP_MD_SOURCE;
+  const backendUrl = process.env.REACT_APP_MD_SOURCE;
   const [md, setMd] = useState(null);
   const transformImageUri = (uri) => {
     if(uri.startsWith('~')) {
-      return `${mdSource}/${projectName}/images/${uri.substring(1, uri.length)}`;      
+      return `${backendUrl}/projects/${projectName}/images/${uri.substring(1, uri.length)}`;      
     }
     else {
       return uri;
     }
   }
 
-  fetch(`${mdSource}/${projectName}/index.md`).then(async (response) => {
+  fetch(`${backendUrl}/projects/${projectName}/index.md`).then(async (response) => {
     setMd(await response.text());
   });
 
