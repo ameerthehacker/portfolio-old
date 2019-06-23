@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Md from 'react-markdown/with-html';
+import Grid from '@material-ui/core/Grid';
+import './project-md.scss';
 
 function ProjectMd({ fileName: projectName }) {
   const mdSource = process.env.REACT_APP_MD_SOURCE;
@@ -11,7 +13,20 @@ function ProjectMd({ fileName: projectName }) {
   });
 
   return (
-    <Md transformImageUri={transformImageUri} source={md} />
+    <Grid
+      container
+      alignItems="center"
+      justify="center"
+    >
+      <Grid item>
+        <Md 
+          escapeHtml={false}
+          className="md-container" 
+          transformImageUri={transformImageUri} 
+          source={md} 
+        />
+      </Grid>
+    </Grid>
   );
 }
 
