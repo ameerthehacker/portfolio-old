@@ -1,5 +1,5 @@
 .md-container {
-  img {
+  img:not(.html-image) {
     width: 100%;
     height: auto;
     border-radius: 20px;
@@ -10,5 +10,14 @@
 
   h2 {
     font-weight: 200;
+  }
+
+  p {
+    font-size: 1em;
+    font-weight: 300;
+  }
+
+  i {
+    color: hotpink;
   }
 }

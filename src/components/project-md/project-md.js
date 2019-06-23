@@ -6,7 +6,14 @@ import './project-md.scss';
 function ProjectMd({ fileName: projectName }) {
   const mdSource = process.env.REACT_APP_MD_SOURCE;
   const [md, setMd] = useState(null);
-  const transformImageUri = (uri) => `${mdSource}/${projectName}/images/${uri}`;
+  const transformImageUri = (uri) => {
+    if(uri.startsWith('~')) {
+      return `${mdSource}/${projectName}/images/${uri.substring(1, uri.length)}`;      
+    }
+    else {
+      return uri;
+    }
+  }
 
   fetch(`${mdSource}/${projectName}/index.md`).then(async (response) => {
     setMd(await response.text());

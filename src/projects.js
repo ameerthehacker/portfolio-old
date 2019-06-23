@@ -23,7 +23,7 @@ const PROJECTS = [
         projectHeading: "Ng Flash Messages",
         projectDescription: "Show bootstrap styled flash messages in a minute",
         githubLink: "https://www.github.com/ameerthehacker/ng-flash-messages",
-        downloads: "5k",
+        downloads: "9k",
         downloadsLink: "https://npm-stat.com/charts.html?package=ng-flash-messages&from=2015-01-01&to=2019-06-30",
         npmLink: "https://www.npmjs.com/package/ng-flash-messages",
         md: "ng-flash-messages"
