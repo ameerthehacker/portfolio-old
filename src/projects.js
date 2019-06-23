@@ -34,7 +34,8 @@ const PROJECTS = [
         githubLink: "https://www.github.com/ameerthehacker/karma-material-reporter",
         downloads: "700",
         downloadsLink: "https://npm-stat.com/charts.html?package=karma-material-reporter&from=2015-01-01&to=2019-06-30",
-        npmLink: "https://www.npmjs.com/package/karma-material-reporter"
+        npmLink: "https://www.npmjs.com/package/karma-material-reporter",
+        md: "karma-material-reporter"
       }
     ]
   },
@@ -48,14 +49,15 @@ const PROJECTS = [
         projectDescription: "VS Code extension to help development in deno",
         githubLink: "https://www.github.com/ameerthehacker/deno-vscode",
         downloads: "1k",
-        downloadsLink: "https://marketplace.visualstudio.com/items?itemName=ameerthehacker.deno-vscode"
+        downloadsLink: "https://marketplace.visualstudio.com/items?itemName=ameerthehacker.deno-vscode",
+        md: "deno-vscode"
       }
     ]
   },
   {
     title: "Kubernetes",
-    icon: "fab fa-docker",
-    iconColor: "099CEC",
+    icon: "fas fa-dharmachakra",
+    iconColor: "326CE5",
     projects: [
       {
         projectHeading: "MyChoices Ecosystem",

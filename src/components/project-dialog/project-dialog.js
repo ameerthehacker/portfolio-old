@@ -13,7 +13,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const useStyles = makeStyles({
   dialogContent: {
-    background: "#ecf0f1"
+    background: "#ecf0f1",
   },
   dialogTitle: { 
     color: "white"
