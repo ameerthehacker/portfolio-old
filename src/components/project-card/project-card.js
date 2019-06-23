@@ -47,7 +47,8 @@ function ProjectCard (
       downloadsLink,
       npmLink,
       onReadMoreClick,
-      icon
+      icon,
+      md
     }
   ) {
   const classes = useStyles();
@@ -91,7 +92,8 @@ function ProjectCard (
                   onClick={() => onReadMoreClick({
                     projectHeading,
                     icon,
-                    bgColors
+                    bgColors,
+                    md
                   })}
                   style={{background: `linear-gradient(45deg, #${bgColors[0]} 30%, #${bgColors[1]} 90%)`}}
                   className={classes.readMoreFab}

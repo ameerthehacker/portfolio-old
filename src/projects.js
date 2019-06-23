@@ -25,7 +25,8 @@ const PROJECTS = [
         githubLink: "https://www.github.com/ameerthehacker/ng-flash-messages",
         downloads: "5k",
         downloadsLink: "https://npm-stat.com/charts.html?package=ng-flash-messages&from=2015-01-01&to=2019-06-30",
-        npmLink: "https://www.npmjs.com/package/ng-flash-messages"
+        npmLink: "https://www.npmjs.com/package/ng-flash-messages",
+        md: "ng-flash-messages"
       },
       {
         projectHeading: "Karma Material Reporter",
