@@ -1,5 +1,7 @@
 # Portfolio
 
+[![Build Status](https://dev.azure.com/ajhan/Portfolio/_apis/build/status/Portfolio-CI?branchName=master)](https://dev.azure.com/ajhan/Portfolio/_build/latest?definitionId=2&branchName=master)
+
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 This is my personal portfolio where you can read more about all the works I have been doing in my office, opensource communities and in my pet projects.
