@@ -68,7 +68,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "now-build": "node scripts/build.js",
+    "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
