@@ -1,6 +1,6 @@
 # Portfolio
 
-![CircleCI](https://img.shields.io/circleci/build/github/ameerthehacker/portfolio.svg?style=for-the-badge)
+[![CircleCI](https://img.shields.io/circleci/build/github/ameerthehacker/portfolio.svg?style=for-the-badge)](https://circleci.com/gh/ameerthehacker/portfolio)
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
