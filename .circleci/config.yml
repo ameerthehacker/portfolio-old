@@ -1,0 +1,38 @@
+version: 2
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - test_build_deploy
+
+jobs:
+  test_build_deploy:
+    docker:
+      - image: circleci/node:8.9
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - run:
+          name: Install dependencies
+          command: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Build portfolio
+          command: npm run build
+
+      - run:
+          name: Deploy to firebase
+          command: ./node_modules/firebase-tools/lib/bin/firebase.js deploy --token "$FIREBASE_TOKEN"

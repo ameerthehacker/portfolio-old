@@ -1,6 +1,6 @@
 # Portfolio
 
-[![Build Status](https://dev.azure.com/ajhan/Portfolio/_apis/build/status/Portfolio-CI?branchName=master)](https://dev.azure.com/ajhan/Portfolio/_build/latest?definitionId=2&branchName=master)
+![CircleCI](https://img.shields.io/circleci/build/github/ameerthehacker/portfolio.svg?style=for-the-badge)
 
 > This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
