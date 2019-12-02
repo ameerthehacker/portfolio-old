@@ -19,8 +19,8 @@ function Social(props) {
       <a target="_blank" rel="noopener noreferrer" href="https://medium.com/free-code-camp/declarative-xamarin-form-validation-c174d2a74618/">
         <i style={{color: "#00ab6c"}} className="fab fa-2x fa-medium"></i>
       </a>
-      <a target="_blank" rel="noopener noreferrer" href="https://www.quora.com/profile/Ameer-Jhan-1/">
-        <i style={{color: "#AA2200"}} className="fab fa-2x fa-quora"></i>
+      <a target="_blank" rel="noopener noreferrer" href="https://dev.to/ameerthehacker/build-your-own-react-in-90-lines-of-javascript-1je2">
+        <i style={{color: "#000"}} className="fab fa-2x fa-dev"></i>
       </a>
       <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/ameerthehacker">
         <i style={{color: "#3b5998"}} className="fab fa-2x fa-facebook-square"></i>
